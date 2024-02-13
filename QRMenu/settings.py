@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
     'menu',
-    'users',
+    'panelAdmin',
     'crispy_forms',
     'crispy_bootstrap5',
 ]
@@ -143,4 +144,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Activar para usar modelo propio del modelo "User" de Django
-# AUTH_USER_MODEL = 'Venta.User'
+AUTH_USER_MODEL = 'users.User'
