@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import menu.views as menuV
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', menuV.ConfigMenu.as_view(),name='config_menu'),
 ]
