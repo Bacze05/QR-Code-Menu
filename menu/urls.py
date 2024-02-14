@@ -1,6 +1,8 @@
-from django.contrib import admin
+# urls.py
 from django.urls import path
+from .views import generar_qr
 
 urlpatterns = [
-    path('Carta/', admin.site.urls),
+    path('generar-qr/', generar_qr, name='generar_qr'),
+
 ]
