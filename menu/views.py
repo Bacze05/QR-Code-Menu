@@ -92,3 +92,4 @@ def generar_qr(request):
 
 
 
+

@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import menu.views as menuV
+import panelAdmin as panelA
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', menuV.ConfigMenu.as_view(),name='config_menu'),
     path('menu/', include('menu.urls')),
+    path('panelAdmin/', include('panelAdmin.urls')),
 
 ]
