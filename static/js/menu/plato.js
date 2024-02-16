@@ -1,24 +1,25 @@
 var $ = jQuery.noConflict();
 
-function listarCategorias() {
+function listarPlatos() {
 
     $.ajax({
-        url: `/panelAdmin/panel/`,
+        url: `/menu/platolist/`,
         type: "get",
         dataType: "json",
         success: function (response) {
-            $('#tabla_categoria tbody').html("");
+            $('#tabla_plato tbody').html("");
             for(let i = 0;i < response.length;i++){
                 let fila = '<tr>';
                 fila += '<td>' + (i+1) +'</td>';
                 fila += '<td>' + response[i]["fields"]['nombre'] + '</td>';
-                fila += '<td>' + response[i]["fields"]['orden'] + '</td>';
-                fila += '<td><a href="/menu/categorias/edit/' + response[i]["pk"] + '" class="btn btn-primary"  >Editar </a> <a href="/menu/categorias/eliminado/' + response[i]["pk"] + '" class="btn btn-danger"  >Eliminar </a></td>';
+                fila += '<td>' + response[i]["fields"]['descripcion'] + '</td>';
+                fila += '<td>' + "$" + response[i]["fields"]['precio'] + '</td>';
+                fila += '<td><a href="/menu/plato/edit/' + response[i]["pk"] + '" class="btn btn-primary"  >Editar </a> <a href="/menu/plato/eliminado/' + response[i]["pk"] + '" class="btn btn-danger"  >Eliminar </a></td>';
                 
                 fila += '</tr>';
-                $('#tabla_categoria tbody').append(fila);
+                $('#tabla_plato tbody').append(fila);
             }
-            $('#tabla_categoria').DataTable({
+            $('#tabla_plato').DataTable({
                 language: {
                     decimal: "",
                     emptyTable: "No hay información",
@@ -55,6 +56,6 @@ function listarCategorias() {
 
 $(document).ready(function () {
     
-    listarCategorias();
+    listarPlatos();
     
 });

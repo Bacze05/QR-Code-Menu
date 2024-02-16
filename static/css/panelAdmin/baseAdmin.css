@@ -1,3 +1,22 @@
-.aside-alt{
-    min-height: 85vh;
+nav{
+    background-color: #242422;
 }
+
+a{
+    color: red;
+}
+.sub-tilt{
+    color: white;
+}
+.div-tilt{
+    background-color: #242422;
+}
+
+.nav-link {
+    color: red; /* Cambia el color de los enlaces a rojo */
+}
+
+.nav-tilt{
+    color: white;
+}
+

@@ -1,0 +1,22 @@
+{% extends "panelAdmin/panelAdmin.html" %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{%static 'css/menu/ConfirmarEliminar.css'%}">
+{% endblock css %}
+
+{% block content %}
+<div class="form-center">
+    <form method="POST">
+        {%csrf_token%}
+        <div>
+
+            <h1>¿Desea eliminar {{object}} ?</h1>
+        </div>
+        <div class="botones">
+
+            <button type="submit" class="btn btn-danger btn-confirmar">Confirmar</button>
+            <a href="{%url 'panelAdmin'%}" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+{%endblock content%}

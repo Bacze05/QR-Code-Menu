@@ -1,0 +1,74 @@
+{% extends "panelAdmin/panelAdmin.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/mantenedorProducto.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <div class="container text-center mt-5">
+
+
+        <div class="row">
+            <div class="col-md-8 mt-2 d-flex">
+
+                <h2 class="fst-italic ">Platos de la categoría </h2>
+            </div>
+
+            <div class="col-md-4 mt-2 d-flex justify-content-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#creacion"><i class="fas fa-plus"></i>
+                    Crear Producto
+                </button>
+            </div>
+
+        </div>
+        <div class="table-responsive mt-4">
+            <table id="tabla_plato" class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Modal Creacion -->
+<div class="modal fade" id="creacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="creacion">Creacion de Plato</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form method="POST" id="form_creacion">
+                {% csrf_token %}
+                <div class="modal-body">
+                    {{form.as_p}}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+{%block extrajs%}
+<script src="{% static 'js/menu/plato.js' %}"></script>
+
+{%endblock extrajs%}

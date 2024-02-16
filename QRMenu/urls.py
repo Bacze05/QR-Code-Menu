@@ -16,13 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth.views import logout_then_login,redirect_to_login
 import menu.views as menuV
 import panelAdmin as panelA
+import users.views as users1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', menuV.ConfigMenu.as_view(),name='config_menu'),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('', menuV.ConfigMenu.as_view(),name='menuP'),
     path('menu/', include('menu.urls')),
     path('panelAdmin/', include('panelAdmin.urls')),
+    path('user/', include('users.urls')),
+    path('logout/', users1.exit, name='exit'),
+
 
 ]

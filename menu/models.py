@@ -8,6 +8,16 @@ class Categoria(models.Model):
 
     def __str__(self):
         return self.nombre
+    
+    def save(self, *args, **kwargs):
+        if not self.id:  # Si es una nueva instancia
+            # Obtener el último valor de orden y sumarle 1
+            ultimo_orden = Categoria.objects.order_by('-orden').first()
+            if ultimo_orden:
+                self.orden = ultimo_orden.orden + 1
+            else:
+                self.orden = 1
+        super().save(*args, **kwargs)
 class Plato(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
