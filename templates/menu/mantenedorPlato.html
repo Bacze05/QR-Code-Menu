@@ -1,0 +1,35 @@
+{% extends "panelAdmin/panelAdmin.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/mantenedorProducto.css' %}">
+{% endblock css %}
+
+{% block content %}
+<form method="post" enctype="multipart/form-data" class="my-4">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="{{ form.nombre.id_for_label }}" class="form-label">Nombre</label>
+        {{ form.nombre }}
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.descripcion.id_for_label }}" class="form-label">Descripcion</label>
+        {{ form.descripcion }}
+    </div>
+    <div class="mb-3">
+        <label for="{{ form.precio.id_for_label }}" class="form-label">Precio</label>
+        {{ form.precio }}
+    </div>
+    <div class="mb-3">
+        <label for="{{ form.categoria.id_for_label }}" class="form-label">Categoria</label>
+        {{ form.categoria }}
+    </div>
+    <div class="d-flex justify-content-between">
+        <a href="{% url 'platolist' %}" class="btn btn-3d btn-dark">Ir al inicio</a>
+        <button type="submit" class="btn btn-3d btn-primary">Guardar</button>
+    </div>
+</form>
+
+
+{% endblock content %}

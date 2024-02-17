@@ -1,0 +1,32 @@
+{% extends "panelAdmin/panelAdmin.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{%static 'css/login.css'%}">
+{% endblock css %}
+
+{% block body %}
+<div class="container border border-top-0">
+    {% block article %}
+        {% block content %}
+            {% for categoria in categorias %}
+                <div class="border border-top-0">
+                    <h4>{{ categoria.nombre }}</h4>
+                    <div class="row">
+                        {% with categoria.plato_set.all as platos_categoria %}
+                            {% for plato in platos_categoria %}
+                                {% if forloop.counter0|divisibleby:"6" %}
+                                    </div><div class="row">
+                                {% endif %}
+                                <div class="col-md-6">
+                                    <p>{{ plato.nombre }} ({{ plato.descripcion }}) ${{ plato.precio }}</p>
+                                </div>
+                            {% endfor %}
+                        {% endwith %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endblock content %}
+    {% endblock article %}
+</div>
+{% endblock body %}

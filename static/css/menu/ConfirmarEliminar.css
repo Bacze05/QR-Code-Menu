@@ -1,0 +1,48 @@
+/* Estilos para el texto de los párrafos */
+p {
+    color: black;
+    font-size: 16px; /* Tamaño de fuente predeterminado */
+}
+
+/* Estilos para los elementos div */
+div {
+    text-align: center;
+}
+
+/* Estilos para centrar y ajustar el formulario */
+.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    margin-top: 30px; /* Espacio superior */
+}
+
+/* Estilos para los botones */
+.botones {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos para los botones en general */
+.btn {
+    margin-left: 15px;
+    padding: 10px 20px; /* Aumentar el espacio dentro de los botones */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Eliminar borde */
+    border-radius: 5px; /* Añadir bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+/* Estilos para el botón Cancelar */
+.btn-secondary {
+    background-color: #6c757d; /* Cambiar color de fondo */
+}
+
+/* Cambiar color de fondo al pasar sobre el botón */
+.btn-confirmar:hover {
+    background-color: #b3000f;
+}
