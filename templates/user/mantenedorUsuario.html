@@ -1,0 +1,15 @@
+{% extends "panelAdmin/panelAdmin.html" %}
+{% load static %}
+
+{%block nav%}
+{%endblock nav%}
+{%block content%}
+{% load crispy_forms_tags %}
+        <form method="POST">
+          {% csrf_token %}
+          
+          <h1 class="text-center fst-italic effect-3d">Edicion de Usuario</h1>
+          {% crispy form %}
+        </form>
+
+{%endblock content%}
