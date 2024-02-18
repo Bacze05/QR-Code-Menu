@@ -2,31 +2,75 @@
 {% load static %}
 
 {% block css %}
-
+<link rel="stylesheet" href="{% static 'css/menu/base.css' %}">
 {% endblock css %}
+{% block nav%}
+<nav>
+    <h2 class="nav-tilt ms-4">Di Niett's</h2>
 
+    <ul class="nav justify-content-end">
+        <li class="nav-item ">
+            <a href="" class="nav-link text-warning disabled"> Bienvido a Di Niett's ! <b>{{user.username}}</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'menuP' %}">Ver el menu</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="{% url 'usuarios' %}">Usuarios</a>
+        </li> -->
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'cambiar_password'%}">Cambiar contrasena</a>
+        </li>
+
+
+
+        <li class="nav-item">
+            <a class="nav-link text-decoration-none" href="{% url 'exit' %}">Cerrar sesion</a>
+        </li>
+
+        {% else %}
+        <li class="nav-item">
+            <a href="{% url 'login' %}" class="text-decoration-none nav-link ">Iniciar Sesión</a>
+        </li>
+
+        {% endif %}
+
+    </ul>
+</nav>
+{% endblock nav%}
 {% block body %}
-<div class="container border border-top-0">
+<div class="container border border-top-0 div-titulo1">
     {% block article %}
-        {% block content %}
-            {% for categoria in categorias %}
-                <div class="border border-top-0">
-                    <h4>{{ categoria.nombre }}</h4>
-                    <div class="row">
-                        {% with categoria.plato_set.all as platos_categoria %}
-                            {% for plato in platos_categoria %}
-                                {% if forloop.counter0|divisibleby:"6" %}
-                                    </div><div class="row">
-                                {% endif %}
-                                <div class="col-md-6">
-                                    <p>{{ plato.nombre }} ({{ plato.descripcion }}) ${{ plato.precio }}</p>
-                                </div>
-                            {% endfor %}
-                        {% endwith %}
-                    </div>
+    <div class="container text-center   ">
+        <h1>Carta</h1>
+    </div>
+    {% block content %}
+    <div class="div-titulo">
+
+        {% for categoria in categorias %}
+        <div class="mb-5 div-cuerpo">
+            <h2>{{ categoria.nombre }}</h2>
+            <div class="row">
+                {% with categoria.plato_set.all as platos_categoria %}
+                {% for plato in platos_categoria %}
+                {% if forloop.counter0|divisibleby:"6" %}
+            </div>
+            <div class="row mb-2">
+                {% endif %}
+                <div class="col-md-6 mb-2">
+                    <h5>{{ plato.nombre }} ({{ plato.descripcion }}) ${{ plato.precio }}</h5>
                 </div>
-            {% endfor %}
-        {% endblock content %}
+                {% endfor %}
+                {% endwith %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock content %}
     {% endblock article %}
 </div>
 {% endblock body %}
+{%block extrajs%}
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+{%endblock extrajs%}
