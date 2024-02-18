@@ -1,0 +1,25 @@
+<!-- qr_popup.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código QR</title>
+    <script>
+        function mostrarCodigoQR(qr_img_data) {
+            var ventana = window.open('', '_blank', 'height=400,width=400');
+            ventana.document.write('<html><head><title>Código QR</title></head><body>');
+            ventana.document.write('<img src="data:image/png;base64,' + qr_img_data + '" alt="Código QR">');
+            ventana.document.write('</body></html>');
+        }
+        window.onload = function() {
+            var qr_img_data = "{{ qr_img_data|safe }}";
+            if (qr_img_data) {
+                mostrarCodigoQR(qr_img_data);
+            }
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

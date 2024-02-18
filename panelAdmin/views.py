@@ -1,8 +1,8 @@
-<<<<<<< Updated upstream
+
 from django.shortcuts import render
 
 # Create your views here.
-=======
+
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -41,4 +41,8 @@ class PanelAdmin(LoginRequiredMixin,View):
         if form.is_valid():
             form.save()
             return redirect('panelAdmin')
->>>>>>> Stashed changes
+        else:
+            # Si el formulario no es válido, vuelve a renderizar la página con el formulario y los errores
+            context = self.get_context_data()
+            context['form'] = form  # Pasar el formulario con los errores al contexto
+            return render(request, self.template_name, context)

@@ -29,6 +29,7 @@ urlpatterns = [
     path('panelAdmin/', include('panelAdmin.urls')),
     path('user/', include('users.urls')),
     path('logout/', users1.exit, name='exit'),
+    path('cambiar_password/', users1.CambiarPassword.as_view(), name='cambiar_password')
 
 
 ]

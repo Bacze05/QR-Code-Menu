@@ -109,6 +109,11 @@ class PlatoG(LoginRequiredMixin,View):
         if form.is_valid():
             form.save()
             return redirect('platolist')
+        else:
+            # Si el formulario no es válido, vuelve a renderizar la página con el formulario y los errores
+            context = self.get_context_data()
+            context['form'] = form  # Pasar el formulario con los errores al contexto
+            return render(request, self.template_name, context)
 
 class PlatoEdicion(LoginRequiredMixin,UpdateView):
     model=Plato

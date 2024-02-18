@@ -1,7 +1,7 @@
 {% extends "panelAdmin/panelAdmin.html" %}
 {% load static %}
 {% block css %}
-<!-- <link rel="stylesheet" href="{%static 'css/modal.css'%}"> -->
+<link rel="stylesheet" href="{%static 'css/modal.css'%}">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
 {% endblock css %}
 
@@ -46,14 +46,10 @@
 <div class="modal fade" id="creacion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content mi-modal-body">
-        <!-- <div class="modal-header">
-          <h1 class="modal-title fs-5">Creacion de Producto</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div> -->
         {% load crispy_forms_tags %}
         <form method="POST">
           {% csrf_token %}
-          <img src="/media/logo.svg" class="effect-3d" alt="logo" height="70">
+          
           <h1 class="text-center fst-italic effect-3d">Registro de Usuario</h1>
           {% crispy form %}
         </form>

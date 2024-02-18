@@ -145,3 +145,39 @@ class CustomUserDeletionForm(forms.ModelForm):
     class Meta:
         model = User
         fields = []
+
+class CambiarPasswordForm(forms.Form):
+    password1 = forms.CharField(label = "contrasena",
+                                 widget=forms.PasswordInput(attrs={
+                                    'class':'form-control',
+                                    'placeholder':'Ingrese su contrasena',
+                                    'id':'password1',
+                                    'required':'required',
+                                    }))
+    
+    password2 = forms.CharField(label = "Confirmar Contraseña", 
+                               widget=forms.PasswordInput(attrs={
+                                   'class':"form-control",
+                                   'placeholder':'Repita la contrasena',
+                                   'id':'password2'}))
+    
+    def clean(self):
+        cleaned_data = super().clean()
+
+        # Validación personalizada para 'password1'
+        password1 = cleaned_data.get('password1')
+        if len(password1) < 8:
+            self.add_error('password1', ValidationError('Su contraseña debe contener al menos 8 caracteres.'))
+
+        # Validación predeterminada de Django para 'password1'
+        try:
+            validate_password(password1)
+        except ValidationError as e:
+            self.add_error('password1', e.messages)
+
+        # Validación personalizada para 'password2'
+        password2 = cleaned_data.get('password2')
+        if password1 and password2 and password1 != password2:
+            self.add_error('password2', ValidationError('Las contraseñas no coinciden.'))
+
+        return cleaned_data
