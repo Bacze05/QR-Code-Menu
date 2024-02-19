@@ -97,11 +97,13 @@ WSGI_APPLICATION = 'QRMenu.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
+    "default": {
+        "ENGINE":'django.db.backends.sqlite3',
+        "NAME": BASE_DIR / 'db.sqlite3',
+    }
 }
+
+DATABASES["default"] = dj_database_url.parse("postgres://qrmenu_django_render_user:6n26PdpMLl00ZChlixNi5FaHKaQ6e6Vs@dpg-cn9p3docmk4c73a1d310-a.oregon-postgres.render.com/qrmenu_django_render")
 
 
 # Password validation
