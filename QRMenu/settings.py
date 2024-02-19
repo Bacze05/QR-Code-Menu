@@ -146,6 +146,8 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
+
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
 if not DEBUG:
