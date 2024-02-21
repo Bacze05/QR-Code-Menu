@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
-import dj_database_url
+import QRMenu.db as db
 
 from django.urls import reverse_lazy
 
@@ -30,16 +30,16 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'RENDER' not in os.environ
-DEBUG = False
-ALLOWED_HOSTS = []
+DEBUG = True
+ALLOWED_HOSTS = ['*']
 # Rellena automaticamente los allowed host con el nombre de la maquina que se esta ejecutando
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+# RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+# if RENDER_EXTERNAL_HOSTNAME:
+#     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
 
-
+DATABASES = db.POSTGRESQL
 
 
 # Application definition
@@ -94,17 +94,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'QRMenu.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE":'django.db.backends.sqlite3',
-        "NAME": BASE_DIR / 'db.sqlite3',
-    }
-}
-
-DATABASES["default"] = dj_database_url.parse("postgres://qrmenu_django_render_user:6n26PdpMLl00ZChlixNi5FaHKaQ6e6Vs@dpg-cn9p3docmk4c73a1d310-a.oregon-postgres.render.com/qrmenu_django_render")
 
 
 # Password validation
@@ -148,7 +137,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-# STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
 # if not DEBUG:
 #     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
