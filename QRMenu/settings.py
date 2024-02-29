@@ -39,7 +39,7 @@ ALLOWED_HOSTS = ['*']
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
 
-DATABASES = db.POSTGRESQL
+DATABASES = db.SQLITE
 
 
 # Application definition
@@ -135,7 +135,7 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 

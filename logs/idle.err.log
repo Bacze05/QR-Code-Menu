@@ -1,0 +1,90 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[22/Feb/2024 12:12:53] code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01Í')
+[22/Feb/2024 12:12:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Feb/2024 12:12:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x030¾')
+[22/Feb/2024 12:12:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Feb/2024 12:12:53] "GET / HTTP/1.1" 200 2800
+[22/Feb/2024 12:12:53] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 200 243
+[22/Feb/2024 12:12:53] "GET /static/css/menu/base.css HTTP/1.1" 200 824
+[22/Feb/2024 12:12:54] "GET /static/img/logo-positivo-removebg-preview.png HTTP/1.1" 200 200180
+Not Found: /favicon.ico
+[22/Feb/2024 12:12:55] "GET /favicon.ico HTTP/1.1" 404 2922
+[22/Feb/2024 12:13:04] "GET / HTTP/1.1" 200 2800
+[22/Feb/2024 12:13:04] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:04] "GET /static/css/menu/base.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:08] "GET /accounts/login/ HTTP/1.1" 200 3176
+[22/Feb/2024 12:13:09] "GET /static/css/login.css HTTP/1.1" 200 1888
+[22/Feb/2024 12:13:09] "GET /static/js/panelAdmin/baseAdmin.js HTTP/1.1" 200 2212
+[22/Feb/2024 12:13:09] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:10] "GET /panelAdmin/panel/ HTTP/1.1" 302 0
+[22/Feb/2024 12:13:10] "GET /accounts/login/?next=/panelAdmin/panel/ HTTP/1.1" 200 3176
+[22/Feb/2024 12:13:23] "POST /accounts/login/ HTTP/1.1" 302 0
+[22/Feb/2024 12:13:23] "GET /panelAdmin/panel/ HTTP/1.1" 200 6912
+[22/Feb/2024 12:13:23] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:24] "GET /static/js/panelAdmin/baseAdmin.js HTTP/1.1" 304 0
+[22/Feb/2024 12:13:24] "GET /panelAdmin/panel/ HTTP/1.1" 200 83
+[22/Feb/2024 12:13:34] "GET /logout/ HTTP/1.1" 302 0
+[22/Feb/2024 12:13:34] "GET / HTTP/1.1" 200 2800
+[22/Feb/2024 12:13:34] "GET /static/css/menu/base.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:34] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 12:13:35] "GET /static/img/logo-positivo-removebg-preview.png HTTP/1.1" 304 0
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 257, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/app/base.py", line 236, in run
+    super().run()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 227, in run
+    self.halt()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 342, in halt
+    self.stop()
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/arbiter.py", line 385, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/sock.py", line 213, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/gunicorn-qrmenu.sock'
+Watching for file changes with StatReloader
+[22/Feb/2024 19:25:47] "GET / HTTP/1.1" 200 2922
+[22/Feb/2024 19:25:47] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 19:25:48] "GET /static/css/menu/base.css HTTP/1.1" 304 0
+[22/Feb/2024 19:25:48] "GET /static/img/logo-positivo-removebg-preview.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[22/Feb/2024 19:25:48] "GET /favicon.ico HTTP/1.1" 404 2922
+Not Found: /d
+[22/Feb/2024 19:27:21] "GET /d HTTP/1.1" 404 2892
+Not Found: /d
+[22/Feb/2024 19:28:28] "GET /d HTTP/1.1" 404 2892
+[22/Feb/2024 19:28:32] "GET / HTTP/1.1" 200 2922
+[22/Feb/2024 19:28:32] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 304 0
+[22/Feb/2024 19:28:32] "GET /static/css/menu/base.css HTTP/1.1" 304 0
+[22/Feb/2024 19:28:33] "GET /static/img/logo-positivo-removebg-preview.png HTTP/1.1" 304 0
+[22/Feb/2024 19:28:35] "GET / HTTP/1.1" 200 2922
+[22/Feb/2024 19:28:35] "GET /static/css/panelAdmin/baseAdmin.css HTTP/1.1" 200 243
+[22/Feb/2024 19:28:35] "GET /static/css/menu/base.css HTTP/1.1" 200 824
+[22/Feb/2024 19:28:36] "GET /static/img/logo-positivo-removebg-preview.png HTTP/1.1" 200 200180
+Not Found: /favicon.ico
+[22/Feb/2024 19:28:36] "GET /favicon.ico HTTP/1.1" 404 2922
+Not Found: /d
+[22/Feb/2024 19:28:40] "GET /d HTTP/1.1" 404 2892
+/home/bacze/QR-Code-Menu/QRMenu/settings.py changed, reloading.
+[22/Feb/2024 19:32:00] "GET /d HTTP/1.1" 404 179
+[22/Feb/2024 19:32:01] "GET /favicon.ico HTTP/1.1" 404 179
+[22/Feb/2024 19:32:09] "GET / HTTP/1.1" 200 2948
+[22/Feb/2024 19:32:09] "GET /static/css/panelAdmin/baseAdmin.77e2c095c12f.css HTTP/1.1" 200 145
+[22/Feb/2024 19:32:10] "GET /static/css/menu/base.fabbe6d3f7ba.css HTTP/1.1" 200 366
+[22/Feb/2024 19:32:10] "GET /static/img/logo-positivo-removebg-preview.b78f5a4e532a.png HTTP/1.1" 200 200180
+[22/Feb/2024 19:50:51] "GET / HTTP/1.1" 200 2948
+[22/Feb/2024 19:50:53] "GET / HTTP/1.1" 200 2948

@@ -1,0 +1,2073 @@
+[2024-02-22 17:20:24 +0000] [3609] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb57dfb7400>
+  on_reload: <function OnReload.on_reload at 0x7fb57dfb7520>
+  when_ready: <function WhenReady.when_ready at 0x7fb57dfb7640>
+  pre_fork: <function Prefork.pre_fork at 0x7fb57dfb7760>
+  post_fork: <function Postfork.post_fork at 0x7fb57dfb7880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb57dfb79a0>
+  worker_int: <function WorkerInt.worker_int at 0x7fb57dfb7ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb57dfb7be0>
+  pre_exec: <function PreExec.pre_exec at 0x7fb57dfb7d00>
+  pre_request: <function PreRequest.pre_request at 0x7fb57dfb7e20>
+  post_request: <function PostRequest.post_request at 0x7fb57dfb7eb0>
+  child_exit: <function ChildExit.child_exit at 0x7fb57dfe0040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb57dfe0160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb57dfe0280>
+  on_exit: <function OnExit.on_exit at 0x7fb57dfe03a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fb57dfe04c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:20:24 +0000] [3609] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:20:24 +0000] [3609] [DEBUG] Arbiter booted
+[2024-02-22 17:20:24 +0000] [3609] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (3609)
+[2024-02-22 17:20:24 +0000] [3609] [INFO] Using worker: sync
+[2024-02-22 17:20:24 +0000] [3614] [INFO] Booting worker with pid: 3614
+[2024-02-22 17:20:24 +0000] [3615] [INFO] Booting worker with pid: 3615
+[2024-02-22 17:20:24 +0000] [3616] [INFO] Booting worker with pid: 3616
+[2024-02-22 17:20:24 +0000] [3617] [INFO] Booting worker with pid: 3617
+[2024-02-22 17:20:24 +0000] [3618] [INFO] Booting worker with pid: 3618
+[2024-02-22 17:20:24 +0000] [3609] [DEBUG] 5 workers
+[2024-02-22 17:20:42 +0000] [3609] [INFO] Handling signal: int
+[2024-02-22 14:20:42 -0300] [3615] [INFO] Worker exiting (pid: 3615)
+[2024-02-22 14:20:42 -0300] [3614] [INFO] Worker exiting (pid: 3614)
+[2024-02-22 14:20:42 -0300] [3616] [INFO] Worker exiting (pid: 3616)
+[2024-02-22 14:20:42 -0300] [3617] [INFO] Worker exiting (pid: 3617)
+[2024-02-22 14:20:42 -0300] [3618] [INFO] Worker exiting (pid: 3618)
+[2024-02-22 17:20:43 +0000] [3609] [INFO] Shutting down: Master
+[2024-02-22 17:38:27 +0000] [4346] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9d39d23400>
+  on_reload: <function OnReload.on_reload at 0x7f9d39d23520>
+  when_ready: <function WhenReady.when_ready at 0x7f9d39d23640>
+  pre_fork: <function Prefork.pre_fork at 0x7f9d39d23760>
+  post_fork: <function Postfork.post_fork at 0x7f9d39d23880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9d39d239a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f9d39d23ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9d39d23be0>
+  pre_exec: <function PreExec.pre_exec at 0x7f9d39d23d00>
+  pre_request: <function PreRequest.pre_request at 0x7f9d39d23e20>
+  post_request: <function PostRequest.post_request at 0x7f9d39d23eb0>
+  child_exit: <function ChildExit.child_exit at 0x7f9d39d50040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9d39d50160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9d39d50280>
+  on_exit: <function OnExit.on_exit at 0x7f9d39d503a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f9d39d504c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:38:27 +0000] [4346] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:38:27 +0000] [4346] [DEBUG] Arbiter booted
+[2024-02-22 17:38:27 +0000] [4346] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (4346)
+[2024-02-22 17:38:27 +0000] [4346] [INFO] Using worker: sync
+[2024-02-22 17:38:27 +0000] [4351] [INFO] Booting worker with pid: 4351
+[2024-02-22 17:38:27 +0000] [4352] [INFO] Booting worker with pid: 4352
+[2024-02-22 17:38:27 +0000] [4353] [INFO] Booting worker with pid: 4353
+[2024-02-22 17:38:27 +0000] [4354] [INFO] Booting worker with pid: 4354
+[2024-02-22 17:38:27 +0000] [4355] [INFO] Booting worker with pid: 4355
+[2024-02-22 17:38:27 +0000] [4346] [DEBUG] 5 workers
+[2024-02-22 17:41:45 +0000] [4346] [INFO] Handling signal: term
+[2024-02-22 14:41:45 -0300] [4351] [INFO] Worker exiting (pid: 4351)
+[2024-02-22 14:41:45 -0300] [4352] [INFO] Worker exiting (pid: 4352)
+[2024-02-22 14:41:45 -0300] [4353] [INFO] Worker exiting (pid: 4353)
+[2024-02-22 14:41:45 -0300] [4354] [INFO] Worker exiting (pid: 4354)
+[2024-02-22 14:41:45 -0300] [4355] [INFO] Worker exiting (pid: 4355)
+[2024-02-22 17:41:46 +0000] [4346] [INFO] Shutting down: Master
+[2024-02-22 17:41:46 +0000] [4565] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa5074f3400>
+  on_reload: <function OnReload.on_reload at 0x7fa5074f3520>
+  when_ready: <function WhenReady.when_ready at 0x7fa5074f3640>
+  pre_fork: <function Prefork.pre_fork at 0x7fa5074f3760>
+  post_fork: <function Postfork.post_fork at 0x7fa5074f3880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa5074f39a0>
+  worker_int: <function WorkerInt.worker_int at 0x7fa5074f3ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa5074f3be0>
+  pre_exec: <function PreExec.pre_exec at 0x7fa5074f3d00>
+  pre_request: <function PreRequest.pre_request at 0x7fa5074f3e20>
+  post_request: <function PostRequest.post_request at 0x7fa5074f3eb0>
+  child_exit: <function ChildExit.child_exit at 0x7fa507520040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa507520160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa507520280>
+  on_exit: <function OnExit.on_exit at 0x7fa5075203a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7fa5075204c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:41:46 +0000] [4565] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:41:46 +0000] [4565] [DEBUG] Arbiter booted
+[2024-02-22 17:41:46 +0000] [4565] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (4565)
+[2024-02-22 17:41:46 +0000] [4565] [INFO] Using worker: sync
+[2024-02-22 17:41:46 +0000] [4570] [INFO] Booting worker with pid: 4570
+[2024-02-22 17:41:46 +0000] [4571] [INFO] Booting worker with pid: 4571
+[2024-02-22 17:41:46 +0000] [4572] [INFO] Booting worker with pid: 4572
+[2024-02-22 17:41:46 +0000] [4573] [INFO] Booting worker with pid: 4573
+[2024-02-22 17:41:46 +0000] [4574] [INFO] Booting worker with pid: 4574
+[2024-02-22 17:41:46 +0000] [4565] [DEBUG] 5 workers
+[2024-02-22 17:44:07 +0000] [4565] [INFO] Handling signal: term
+[2024-02-22 14:44:07 -0300] [4570] [INFO] Worker exiting (pid: 4570)
+[2024-02-22 14:44:07 -0300] [4571] [INFO] Worker exiting (pid: 4571)
+[2024-02-22 14:44:07 -0300] [4572] [INFO] Worker exiting (pid: 4572)
+[2024-02-22 14:44:07 -0300] [4573] [INFO] Worker exiting (pid: 4573)
+[2024-02-22 14:44:07 -0300] [4574] [INFO] Worker exiting (pid: 4574)
+[2024-02-22 17:44:08 +0000] [4565] [INFO] Shutting down: Master
+[2024-02-22 17:44:08 +0000] [4608] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0cff233400>
+  on_reload: <function OnReload.on_reload at 0x7f0cff233520>
+  when_ready: <function WhenReady.when_ready at 0x7f0cff233640>
+  pre_fork: <function Prefork.pre_fork at 0x7f0cff233760>
+  post_fork: <function Postfork.post_fork at 0x7f0cff233880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0cff2339a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f0cff233ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0cff233be0>
+  pre_exec: <function PreExec.pre_exec at 0x7f0cff233d00>
+  pre_request: <function PreRequest.pre_request at 0x7f0cff233e20>
+  post_request: <function PostRequest.post_request at 0x7f0cff233eb0>
+  child_exit: <function ChildExit.child_exit at 0x7f0cff260040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0cff260160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0cff260280>
+  on_exit: <function OnExit.on_exit at 0x7f0cff2603a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f0cff2604c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:44:08 +0000] [4608] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:44:08 +0000] [4608] [DEBUG] Arbiter booted
+[2024-02-22 17:44:08 +0000] [4608] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (4608)
+[2024-02-22 17:44:08 +0000] [4608] [INFO] Using worker: sync
+[2024-02-22 17:44:08 +0000] [4613] [INFO] Booting worker with pid: 4613
+[2024-02-22 17:44:08 +0000] [4614] [INFO] Booting worker with pid: 4614
+[2024-02-22 17:44:08 +0000] [4615] [INFO] Booting worker with pid: 4615
+[2024-02-22 17:44:08 +0000] [4616] [INFO] Booting worker with pid: 4616
+[2024-02-22 17:44:08 +0000] [4617] [INFO] Booting worker with pid: 4617
+[2024-02-22 17:44:08 +0000] [4608] [DEBUG] 5 workers
+[2024-02-22 17:45:50 +0000] [4608] [INFO] Handling signal: term
+[2024-02-22 14:45:50 -0300] [4613] [INFO] Worker exiting (pid: 4613)
+[2024-02-22 14:45:50 -0300] [4614] [INFO] Worker exiting (pid: 4614)
+[2024-02-22 14:45:50 -0300] [4615] [INFO] Worker exiting (pid: 4615)
+[2024-02-22 14:45:50 -0300] [4616] [INFO] Worker exiting (pid: 4616)
+[2024-02-22 14:45:50 -0300] [4617] [INFO] Worker exiting (pid: 4617)
+[2024-02-22 17:45:51 +0000] [4608] [INFO] Shutting down: Master
+[2024-02-22 17:45:51 +0000] [4632] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7d9139f400>
+  on_reload: <function OnReload.on_reload at 0x7f7d9139f520>
+  when_ready: <function WhenReady.when_ready at 0x7f7d9139f640>
+  pre_fork: <function Prefork.pre_fork at 0x7f7d9139f760>
+  post_fork: <function Postfork.post_fork at 0x7f7d9139f880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7d9139f9a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f7d9139fac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7d9139fbe0>
+  pre_exec: <function PreExec.pre_exec at 0x7f7d9139fd00>
+  pre_request: <function PreRequest.pre_request at 0x7f7d9139fe20>
+  post_request: <function PostRequest.post_request at 0x7f7d9139feb0>
+  child_exit: <function ChildExit.child_exit at 0x7f7d913cc040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7d913cc160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7d913cc280>
+  on_exit: <function OnExit.on_exit at 0x7f7d913cc3a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f7d913cc4c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:45:51 +0000] [4632] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:45:51 +0000] [4632] [DEBUG] Arbiter booted
+[2024-02-22 17:45:51 +0000] [4632] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (4632)
+[2024-02-22 17:45:51 +0000] [4632] [INFO] Using worker: sync
+[2024-02-22 17:45:51 +0000] [4637] [INFO] Booting worker with pid: 4637
+[2024-02-22 17:45:51 +0000] [4638] [INFO] Booting worker with pid: 4638
+[2024-02-22 17:45:51 +0000] [4639] [INFO] Booting worker with pid: 4639
+[2024-02-22 17:45:51 +0000] [4640] [INFO] Booting worker with pid: 4640
+[2024-02-22 17:45:52 +0000] [4641] [INFO] Booting worker with pid: 4641
+[2024-02-22 17:45:52 +0000] [4632] [DEBUG] 5 workers
+[2024-02-22 17:46:57 +0000] [4632] [INFO] Handling signal: term
+[2024-02-22 14:46:57 -0300] [4637] [INFO] Worker exiting (pid: 4637)
+[2024-02-22 14:46:57 -0300] [4638] [INFO] Worker exiting (pid: 4638)
+[2024-02-22 14:46:57 -0300] [4639] [INFO] Worker exiting (pid: 4639)
+[2024-02-22 14:46:57 -0300] [4641] [INFO] Worker exiting (pid: 4641)
+[2024-02-22 14:46:57 -0300] [4640] [INFO] Worker exiting (pid: 4640)
+[2024-02-22 17:46:58 +0000] [4632] [INFO] Shutting down: Master
+[2024-02-22 17:47:46 +0000] [728] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f22e3d73400>
+  on_reload: <function OnReload.on_reload at 0x7f22e3d73520>
+  when_ready: <function WhenReady.when_ready at 0x7f22e3d73640>
+  pre_fork: <function Prefork.pre_fork at 0x7f22e3d73760>
+  post_fork: <function Postfork.post_fork at 0x7f22e3d73880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f22e3d739a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f22e3d73ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f22e3d73be0>
+  pre_exec: <function PreExec.pre_exec at 0x7f22e3d73d00>
+  pre_request: <function PreRequest.pre_request at 0x7f22e3d73e20>
+  post_request: <function PostRequest.post_request at 0x7f22e3d73eb0>
+  child_exit: <function ChildExit.child_exit at 0x7f22e3da0040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f22e3da0160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f22e3da0280>
+  on_exit: <function OnExit.on_exit at 0x7f22e3da03a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f22e3da04c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:47:46 +0000] [728] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:47:46 +0000] [728] [DEBUG] Arbiter booted
+[2024-02-22 17:47:46 +0000] [728] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (728)
+[2024-02-22 17:47:46 +0000] [728] [INFO] Using worker: sync
+[2024-02-22 17:47:46 +0000] [737] [INFO] Booting worker with pid: 737
+[2024-02-22 17:47:46 +0000] [738] [INFO] Booting worker with pid: 738
+[2024-02-22 17:47:46 +0000] [739] [INFO] Booting worker with pid: 739
+[2024-02-22 17:47:46 +0000] [740] [INFO] Booting worker with pid: 740
+[2024-02-22 17:47:46 +0000] [741] [INFO] Booting worker with pid: 741
+[2024-02-22 17:47:46 +0000] [728] [DEBUG] 5 workers
+[2024-02-22 17:52:43 +0000] [728] [INFO] Handling signal: term
+[2024-02-22 14:52:43 -0300] [737] [INFO] Worker exiting (pid: 737)
+[2024-02-22 14:52:43 -0300] [738] [INFO] Worker exiting (pid: 738)
+[2024-02-22 14:52:43 -0300] [739] [INFO] Worker exiting (pid: 739)
+[2024-02-22 14:52:43 -0300] [740] [INFO] Worker exiting (pid: 740)
+[2024-02-22 14:52:43 -0300] [741] [INFO] Worker exiting (pid: 741)
+[2024-02-22 17:52:44 +0000] [728] [INFO] Shutting down: Master
+[2024-02-22 17:52:46 +0000] [1174] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2bbd613400>
+  on_reload: <function OnReload.on_reload at 0x7f2bbd613520>
+  when_ready: <function WhenReady.when_ready at 0x7f2bbd613640>
+  pre_fork: <function Prefork.pre_fork at 0x7f2bbd613760>
+  post_fork: <function Postfork.post_fork at 0x7f2bbd613880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2bbd6139a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f2bbd613ac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2bbd613be0>
+  pre_exec: <function PreExec.pre_exec at 0x7f2bbd613d00>
+  pre_request: <function PreRequest.pre_request at 0x7f2bbd613e20>
+  post_request: <function PostRequest.post_request at 0x7f2bbd613eb0>
+  child_exit: <function ChildExit.child_exit at 0x7f2bbd640040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2bbd640160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2bbd640280>
+  on_exit: <function OnExit.on_exit at 0x7f2bbd6403a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f2bbd6404c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 17:52:46 +0000] [1174] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 17:52:46 +0000] [1174] [DEBUG] Arbiter booted
+[2024-02-22 17:52:46 +0000] [1174] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (1174)
+[2024-02-22 17:52:46 +0000] [1174] [INFO] Using worker: sync
+[2024-02-22 17:52:46 +0000] [1179] [INFO] Booting worker with pid: 1179
+[2024-02-22 17:52:46 +0000] [1180] [INFO] Booting worker with pid: 1180
+[2024-02-22 17:52:46 +0000] [1181] [INFO] Booting worker with pid: 1181
+[2024-02-22 17:52:46 +0000] [1182] [INFO] Booting worker with pid: 1182
+[2024-02-22 17:52:46 +0000] [1174] [DEBUG] 5 workers
+[2024-02-22 17:52:46 +0000] [1183] [INFO] Booting worker with pid: 1183
+[2024-02-22 15:08:01 -0300] [1182] [DEBUG] GET /
+[2024-02-22 15:12:40 -0300] [1183] [DEBUG] GET /
+[2024-02-22 15:12:41 -0300] [1181] [DEBUG] GET /favicon.ico
+[2024-02-22 18:18:52 +0000] [1174] [INFO] Handling signal: term
+[2024-02-22 15:18:52 -0300] [1179] [INFO] Worker exiting (pid: 1179)
+[2024-02-22 15:18:52 -0300] [1180] [INFO] Worker exiting (pid: 1180)
+[2024-02-22 15:18:52 -0300] [1181] [INFO] Worker exiting (pid: 1181)
+[2024-02-22 15:18:52 -0300] [1182] [INFO] Worker exiting (pid: 1182)
+[2024-02-22 15:18:52 -0300] [1183] [INFO] Worker exiting (pid: 1183)
+[2024-02-22 18:18:53 +0000] [1174] [INFO] Shutting down: Master
+[2024-02-22 21:49:55 +0000] [793] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: QRMenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f120819f400>
+  on_reload: <function OnReload.on_reload at 0x7f120819f520>
+  when_ready: <function WhenReady.when_ready at 0x7f120819f640>
+  pre_fork: <function Prefork.pre_fork at 0x7f120819f760>
+  post_fork: <function Postfork.post_fork at 0x7f120819f880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f120819f9a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f120819fac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f120819fbe0>
+  pre_exec: <function PreExec.pre_exec at 0x7f120819fd00>
+  pre_request: <function PreRequest.pre_request at 0x7f120819fe20>
+  post_request: <function PostRequest.post_request at 0x7f120819feb0>
+  child_exit: <function ChildExit.child_exit at 0x7f12081cc040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f12081cc160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f12081cc280>
+  on_exit: <function OnExit.on_exit at 0x7f12081cc3a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f12081cc4c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 21:49:55 +0000] [793] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 21:49:55 +0000] [793] [DEBUG] Arbiter booted
+[2024-02-22 21:49:55 +0000] [793] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (793)
+[2024-02-22 21:49:55 +0000] [793] [INFO] Using worker: sync
+[2024-02-22 21:49:55 +0000] [804] [INFO] Booting worker with pid: 804
+[2024-02-22 21:49:55 +0000] [805] [INFO] Booting worker with pid: 805
+[2024-02-22 21:49:55 +0000] [806] [INFO] Booting worker with pid: 806
+[2024-02-22 21:49:55 +0000] [793] [DEBUG] 5 workers
+[2024-02-22 21:49:55 +0000] [807] [INFO] Booting worker with pid: 807
+[2024-02-22 21:49:55 +0000] [812] [INFO] Booting worker with pid: 812
+[2024-02-22 18:51:29 -0300] [804] [DEBUG] GET /
+[2024-02-22 22:07:06 +0000] [1184] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f62cc7bb400>
+  on_reload: <function OnReload.on_reload at 0x7f62cc7bb520>
+  when_ready: <function WhenReady.when_ready at 0x7f62cc7bb640>
+  pre_fork: <function Prefork.pre_fork at 0x7f62cc7bb760>
+  post_fork: <function Postfork.post_fork at 0x7f62cc7bb880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f62cc7bb9a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f62cc7bbac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f62cc7bbbe0>
+  pre_exec: <function PreExec.pre_exec at 0x7f62cc7bbd00>
+  pre_request: <function PreRequest.pre_request at 0x7f62cc7bbe20>
+  post_request: <function PostRequest.post_request at 0x7f62cc7bbeb0>
+  child_exit: <function ChildExit.child_exit at 0x7f62cc7e4040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f62cc7e4160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f62cc7e4280>
+  on_exit: <function OnExit.on_exit at 0x7f62cc7e43a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f62cc7e44c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 22:07:06 +0000] [1184] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 22:07:06 +0000] [1184] [DEBUG] Arbiter booted
+[2024-02-22 22:07:06 +0000] [1184] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (1184)
+[2024-02-22 22:07:06 +0000] [1184] [INFO] Using worker: sync
+[2024-02-22 22:07:06 +0000] [1189] [INFO] Booting worker with pid: 1189
+[2024-02-22 22:07:06 +0000] [1190] [INFO] Booting worker with pid: 1190
+[2024-02-22 22:07:06 +0000] [1191] [INFO] Booting worker with pid: 1191
+[2024-02-22 22:07:06 +0000] [1192] [INFO] Booting worker with pid: 1192
+[2024-02-22 22:07:06 +0000] [1193] [INFO] Booting worker with pid: 1193
+[2024-02-22 22:07:06 +0000] [1184] [DEBUG] 5 workers
+[2024-02-22 22:08:35 +0000] [1184] [INFO] Handling signal: int
+[2024-02-22 19:08:36 -0300] [1190] [INFO] Worker exiting (pid: 1190)
+[2024-02-22 19:08:36 -0300] [1191] [INFO] Worker exiting (pid: 1191)
+[2024-02-22 19:08:36 -0300] [1189] [INFO] Worker exiting (pid: 1189)
+[2024-02-22 19:08:36 -0300] [1192] [INFO] Worker exiting (pid: 1192)
+[2024-02-22 19:08:36 -0300] [1193] [INFO] Worker exiting (pid: 1193)
+[2024-02-22 22:08:36 +0000] [1184] [INFO] Shutting down: Master
+[2024-02-22 22:25:28 +0000] [793] [INFO] Handling signal: term
+[2024-02-22 19:25:31 -0300] [804] [INFO] Parent changed, shutting down: <Worker 804>
+[2024-02-22 19:25:31 -0300] [804] [INFO] Worker exiting (pid: 804)
+[2024-02-22 19:25:36 -0300] [805] [INFO] Parent changed, shutting down: <Worker 805>
+[2024-02-22 19:25:36 -0300] [805] [INFO] Worker exiting (pid: 805)
+[2024-02-22 19:25:36 -0300] [806] [INFO] Parent changed, shutting down: <Worker 806>
+[2024-02-22 19:25:36 -0300] [806] [INFO] Worker exiting (pid: 806)
+[2024-02-22 19:25:36 -0300] [807] [INFO] Parent changed, shutting down: <Worker 807>
+[2024-02-22 19:25:36 -0300] [807] [INFO] Worker exiting (pid: 807)
+[2024-02-22 19:25:36 -0300] [812] [INFO] Parent changed, shutting down: <Worker 812>
+[2024-02-22 19:25:36 -0300] [812] [INFO] Worker exiting (pid: 812)
+[2024-02-22 22:51:13 +0000] [1615] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f459d5fb400>
+  on_reload: <function OnReload.on_reload at 0x7f459d5fb520>
+  when_ready: <function WhenReady.when_ready at 0x7f459d5fb640>
+  pre_fork: <function Prefork.pre_fork at 0x7f459d5fb760>
+  post_fork: <function Postfork.post_fork at 0x7f459d5fb880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f459d5fb9a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f459d5fbac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f459d5fbbe0>
+  pre_exec: <function PreExec.pre_exec at 0x7f459d5fbd00>
+  pre_request: <function PreRequest.pre_request at 0x7f459d5fbe20>
+  post_request: <function PostRequest.post_request at 0x7f459d5fbeb0>
+  child_exit: <function ChildExit.child_exit at 0x7f459d628040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f459d628160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f459d628280>
+  on_exit: <function OnExit.on_exit at 0x7f459d6283a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f459d6284c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-22 22:51:13 +0000] [1615] [INFO] Starting gunicorn 21.2.0
+[2024-02-22 22:51:13 +0000] [1615] [DEBUG] Arbiter booted
+[2024-02-22 22:51:13 +0000] [1615] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (1615)
+[2024-02-22 22:51:13 +0000] [1615] [INFO] Using worker: sync
+[2024-02-22 22:51:13 +0000] [1620] [INFO] Booting worker with pid: 1620
+[2024-02-22 22:51:14 +0000] [1621] [INFO] Booting worker with pid: 1621
+[2024-02-22 22:51:14 +0000] [1622] [INFO] Booting worker with pid: 1622
+[2024-02-22 22:51:14 +0000] [1623] [INFO] Booting worker with pid: 1623
+[2024-02-22 22:51:14 +0000] [1624] [INFO] Booting worker with pid: 1624
+[2024-02-22 22:51:14 +0000] [1615] [DEBUG] 5 workers
+[2024-02-22 20:08:00 -0300] [1623] [DEBUG] GET /
+[2024-02-22 20:11:50 -0300] [1624] [DEBUG] GET /
+[2024-02-22 20:11:50 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-22 20:19:40 -0300] [1622] [DEBUG] GET /
+[2024-02-22 20:56:49 -0300] [1622] [DEBUG] GET /
+[2024-02-22 21:07:38 -0300] [1622] [DEBUG] GET /
+[2024-02-22 21:14:54 -0300] [1621] [DEBUG] GET /
+[2024-02-22 21:56:59 -0300] [1623] [DEBUG] GET /
+[2024-02-22 22:06:22 -0300] [1623] [DEBUG] GET /
+[2024-02-22 22:24:29 -0300] [1622] [DEBUG] GET /
+[2024-02-22 23:12:10 -0300] [1622] [DEBUG] GET /
+[2024-02-22 23:29:26 -0300] [1620] [DEBUG] GET /
+[2024-02-22 23:35:18 -0300] [1624] [DEBUG] GET /
+[2024-02-22 23:35:23 -0300] [1621] [DEBUG] GET /
+[2024-02-22 23:35:23 -0300] [1624] [DEBUG] GET /favicon.ico
+[2024-02-23 00:19:56 -0300] [1624] [DEBUG] GET /
+[2024-02-23 00:34:40 -0300] [1623] [DEBUG] GET /.env
+[2024-02-23 00:34:41 -0300] [1622] [DEBUG] POST /
+[2024-02-23 01:05:51 -0300] [1620] [DEBUG] GET /admin
+[2024-02-23 01:05:51 -0300] [1624] [DEBUG] GET /admin/
+[2024-02-23 01:05:59 -0300] [1620] [DEBUG] GET /
+[2024-02-23 01:05:59 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 01:06:57 -0300] [1621] [DEBUG] GET /.env
+[2024-02-23 01:06:57 -0300] [1620] [DEBUG] POST /
+[2024-02-23 01:07:00 -0300] [1624] [DEBUG] GET /
+[2024-02-23 01:10:06 -0300] [1620] [DEBUG] GET /
+[2024-02-23 01:42:35 -0300] [1621] [DEBUG] GET /
+[2024-02-23 02:00:54 -0300] [1623] [DEBUG] GET /
+[2024-02-23 02:19:17 -0300] [1623] [DEBUG] GET /
+[2024-02-23 02:53:59 -0300] [1624] [DEBUG] GET /.env
+[2024-02-23 02:53:59 -0300] [1622] [DEBUG] POST /
+[2024-02-23 02:56:28 -0300] [1620] [DEBUG] GET /
+[2024-02-23 02:56:29 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 02:56:30 -0300] [1623] [DEBUG] GET /
+[2024-02-23 02:56:30 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 02:58:14 -0300] [1622] [DEBUG] GET /
+[2024-02-23 02:58:14 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 02:58:15 -0300] [1620] [DEBUG] GET /
+[2024-02-23 02:58:16 -0300] [1623] [DEBUG] GET /favicon.ico
+[2024-02-23 03:07:26 -0300] [1623] [DEBUG] GET /
+[2024-02-23 03:20:16 -0300] [1623] [DEBUG] GET /
+[2024-02-23 03:29:30 -0300] [1620] [DEBUG] GET /.env
+[2024-02-23 03:29:30 -0300] [1621] [DEBUG] POST /
+[2024-02-23 03:44:27 -0300] [1623] [DEBUG] GET /.env
+[2024-02-23 03:59:02 -0300] [1620] [DEBUG] GET /
+[2024-02-23 04:02:32 -0300] [1623] [DEBUG] GET /
+[2024-02-23 04:02:36 -0300] [1620] [DEBUG] GET /
+[2024-02-23 04:02:37 -0300] [1624] [DEBUG] GET /favicon.ico
+[2024-02-23 04:05:01 -0300] [1624] [DEBUG] GET /
+[2024-02-23 04:07:49 -0300] [1622] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-02-23 04:07:49 -0300] [1621] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-02-23 04:12:11 -0300] [1620] [DEBUG] GET /
+[2024-02-23 04:12:14 -0300] [1621] [DEBUG] GET /
+[2024-02-23 04:12:14 -0300] [1620] [DEBUG] GET /favicon.ico
+[2024-02-23 04:16:44 -0300] [1622] [DEBUG] GET /
+[2024-02-23 04:30:12 -0300] [1623] [DEBUG] GET /
+[2024-02-23 04:32:24 -0300] [1624] [DEBUG] GET /.env
+[2024-02-23 04:32:24 -0300] [1623] [DEBUG] POST /
+[2024-02-23 05:03:34 -0300] [1620] [DEBUG] GET /
+[2024-02-23 05:04:04 -0300] [1621] [DEBUG] GET /
+[2024-02-23 05:15:17 -0300] [1623] [DEBUG] GET /hudson
+[2024-02-23 05:20:32 -0300] [1624] [DEBUG] GET /
+[2024-02-23 05:22:56 -0300] [1620] [DEBUG] GET /druid/index.html
+[2024-02-23 05:33:01 -0300] [1620] [DEBUG] GET /.env
+[2024-02-23 05:33:02 -0300] [1621] [DEBUG] POST /
+[2024-02-23 05:53:48 -0300] [1620] [DEBUG] GET /cgi-bin/webcm
+[2024-02-23 06:05:26 -0300] [1620] [DEBUG] GET /
+[2024-02-23 06:05:27 -0300] [1621] [DEBUG] GET /form.html
+[2024-02-23 06:05:27 -0300] [1623] [DEBUG] GET /upl.php
+[2024-02-23 06:05:28 -0300] [1624] [DEBUG] GET /geoip/
+[2024-02-23 06:05:28 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 06:05:29 -0300] [1621] [DEBUG] GET /1.php
+[2024-02-23 06:05:29 -0300] [1624] [DEBUG] GET /bundle.js
+[2024-02-23 06:05:30 -0300] [1622] [DEBUG] GET /files/
+[2024-02-23 06:05:30 -0300] [1623] [DEBUG] GET /systembc/password.php
+[2024-02-23 06:05:31 -0300] [1620] [DEBUG] GET /password.php
+[2024-02-23 06:05:31 -0300] [1621] [DEBUG] GET /info.php
+[2024-02-23 06:13:40 -0300] [1621] [DEBUG] GET /
+[2024-02-23 06:14:02 -0300] [1620] [DEBUG] GET /
+[2024-02-23 06:38:39 -0300] [1620] [DEBUG] GET /.env
+[2024-02-23 06:38:39 -0300] [1623] [DEBUG] POST /
+[2024-02-23 06:52:19 -0300] [1624] [DEBUG] GET /
+[2024-02-23 06:55:06 -0300] [1624] [DEBUG] GET /.env
+[2024-02-23 06:55:06 -0300] [1623] [DEBUG] POST /
+[2024-02-23 06:59:39 -0300] [1623] [DEBUG] GET /
+[2024-02-23 07:22:37 -0300] [1622] [DEBUG] GET /
+[2024-02-23 07:22:40 -0300] [1624] [DEBUG] GET /
+[2024-02-23 07:22:41 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 07:34:07 -0300] [1621] [DEBUG] GET /
+[2024-02-23 07:40:55 -0300] [1621] [DEBUG] GET /
+[2024-02-23 07:40:55 -0300] [1620] [DEBUG] GET /cf_scripts/scripts/ajax/ckeditor/ckeditor.js
+[2024-02-23 08:04:04 -0300] [1622] [DEBUG] GET /
+[2024-02-23 08:22:43 -0300] [1622] [DEBUG] GET /
+[2024-02-23 08:27:39 -0300] [1623] [DEBUG] GET /
+[2024-02-23 08:27:40 -0300] [1624] [DEBUG] GET /favicon.ico
+[2024-02-23 09:07:57 -0300] [1622] [DEBUG] GET /b9iX
+[2024-02-23 09:07:57 -0300] [1623] [DEBUG] GET /It7i
+[2024-02-23 09:10:43 -0300] [1623] [DEBUG] GET /
+[2024-02-23 09:10:46 -0300] [1624] [DEBUG] GET /
+[2024-02-23 09:10:46 -0300] [1620] [DEBUG] GET /favicon.ico
+[2024-02-23 09:14:36 -0300] [1620] [DEBUG] GET /
+[2024-02-23 09:16:14 -0300] [1623] [DEBUG] GET /.env
+[2024-02-23 09:16:17 -0300] [1621] [DEBUG] POST /
+[2024-02-23 09:40:58 -0300] [1620] [DEBUG] GET /.env
+[2024-02-23 09:40:58 -0300] [1623] [DEBUG] POST /
+[2024-02-23 09:41:04 -0300] [1622] [DEBUG] POST /boaform/admin/formLogin
+[2024-02-23 10:12:40 -0300] [1620] [DEBUG] GET /
+[2024-02-23 10:13:03 -0300] [1622] [DEBUG] GET /
+[2024-02-23 10:28:30 -0300] [1620] [DEBUG] GET /
+[2024-02-23 10:28:42 -0300] [1623] [DEBUG] GET /
+[2024-02-23 10:35:06 -0300] [1620] [DEBUG] GET /cgi-bin/authLogin.cgi
+[2024-02-23 10:42:07 -0300] [1623] [DEBUG] GET /
+[2024-02-23 10:42:24 -0300] [1620] [DEBUG] GET /
+[2024-02-23 11:18:01 -0300] [1624] [DEBUG] GET /
+[2024-02-23 11:18:09 -0300] [1621] [DEBUG] GET /
+[2024-02-23 11:21:52 -0300] [1624] [DEBUG] GET /
+[2024-02-23 11:53:19 -0300] [1620] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-02-23 11:53:19 -0300] [1624] [DEBUG] GET /cgi-bin/luci/;stok=/locale
+[2024-02-23 12:04:01 -0300] [1621] [DEBUG] GET /.env
+[2024-02-23 12:04:04 -0300] [1623] [DEBUG] POST /
+[2024-02-23 12:15:24 -0300] [1624] [DEBUG] GET /
+[2024-02-23 12:31:06 -0300] [1623] [DEBUG] GET /
+[2024-02-23 12:31:07 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 12:32:05 -0300] [1622] [DEBUG] GET /
+[2024-02-23 12:36:57 -0300] [1624] [DEBUG] GET /
+[2024-02-23 12:37:25 -0300] [1621] [DEBUG] GET /
+[2024-02-23 12:37:44 -0300] [1624] [DEBUG] GET /favicon.ico
+[2024-02-23 12:37:45 -0300] [1620] [DEBUG] GET /robots.txt
+[2024-02-23 12:37:47 -0300] [1623] [DEBUG] GET /sitemap.xml
+[2024-02-23 12:42:09 -0300] [1622] [DEBUG] POST /Autodiscover/Autodiscover.xml
+[2024-02-23 12:46:55 -0300] [1623] [DEBUG] GET /
+[2024-02-23 12:46:55 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 12:47:32 -0300] [1620] [DEBUG] GET /
+[2024-02-23 12:47:33 -0300] [1624] [DEBUG] GET /favicon.ico
+[2024-02-23 12:49:22 -0300] [1624] [DEBUG] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-02-23 12:49:43 -0300] [1621] [DEBUG] GET /
+[2024-02-23 12:49:44 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 12:53:23 -0300] [1620] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2024-02-23 12:59:11 -0300] [1620] [DEBUG] GET /
+[2024-02-23 12:59:11 -0300] [1623] [DEBUG] GET /favicon.ico
+[2024-02-23 12:59:56 -0300] [1624] [DEBUG] GET /solr/admin/info/system
+[2024-02-23 13:02:51 -0300] [1622] [DEBUG] GET /robots.txt
+[2024-02-23 13:03:01 -0300] [1621] [DEBUG] GET /
+[2024-02-23 13:03:05 -0300] [1624] [DEBUG] GET /
+[2024-02-23 13:03:06 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 13:08:43 -0300] [1622] [DEBUG] GET /
+[2024-02-23 13:08:49 -0300] [1623] [DEBUG] GET /
+[2024-02-23 13:14:28 -0300] [1621] [DEBUG] GET /
+[2024-02-23 13:22:27 -0300] [1624] [DEBUG] GET /portal/redlion
+[2024-02-23 13:34:20 -0300] [1621] [DEBUG] GET /admin/config.php
+[2024-02-23 13:43:54 -0300] [1623] [DEBUG] GET /
+[2024-02-23 13:43:55 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 13:45:30 -0300] [1620] [DEBUG] GET /
+[2024-02-23 13:45:31 -0300] [1622] [DEBUG] GET /favicon.ico
+[2024-02-23 13:52:53 -0300] [1622] [DEBUG] GET /console/
+[2024-02-23 13:56:08 -0300] [1620] [DEBUG] GET /.env
+[2024-02-23 13:58:32 -0300] [1624] [DEBUG] GET /_ignition/execute-solution
+[2024-02-23 14:01:09 -0300] [1624] [DEBUG] GET /.env
+[2024-02-23 14:01:09 -0300] [1623] [DEBUG] POST /
+[2024-02-23 14:02:09 -0300] [1621] [DEBUG] GET /
+[2024-02-23 14:02:10 -0300] [1623] [DEBUG] GET /favicon.ico
+[2024-02-23 14:08:04 -0300] [1623] [DEBUG] GET /
+[2024-02-23 14:08:05 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 14:08:07 -0300] [1624] [DEBUG] GET /
+[2024-02-23 14:08:07 -0300] [1621] [DEBUG] GET /favicon.ico
+[2024-02-23 14:13:06 -0300] [1620] [DEBUG] GET /
+[2024-02-23 17:14:21 +0000] [1615] [INFO] Handling signal: term
+[2024-02-23 14:14:21 -0300] [1620] [INFO] Worker exiting (pid: 1620)
+[2024-02-23 14:14:21 -0300] [1621] [INFO] Worker exiting (pid: 1621)
+[2024-02-23 14:14:21 -0300] [1622] [INFO] Worker exiting (pid: 1622)
+[2024-02-23 14:14:21 -0300] [1623] [INFO] Worker exiting (pid: 1623)
+[2024-02-23 14:14:21 -0300] [1624] [INFO] Worker exiting (pid: 1624)
+[2024-02-23 17:14:22 +0000] [1615] [INFO] Shutting down: Master
+[2024-02-23 17:15:10 +0000] [795] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-qrmenu.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/bacze/QR-Code-Menu
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/bacze/QR-Code-Menu/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: qrmenu
+  default_proc_name: QRMenu.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f57dfa5f400>
+  on_reload: <function OnReload.on_reload at 0x7f57dfa5f520>
+  when_ready: <function WhenReady.when_ready at 0x7f57dfa5f640>
+  pre_fork: <function Prefork.pre_fork at 0x7f57dfa5f760>
+  post_fork: <function Postfork.post_fork at 0x7f57dfa5f880>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f57dfa5f9a0>
+  worker_int: <function WorkerInt.worker_int at 0x7f57dfa5fac0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f57dfa5fbe0>
+  pre_exec: <function PreExec.pre_exec at 0x7f57dfa5fd00>
+  pre_request: <function PreRequest.pre_request at 0x7f57dfa5fe20>
+  post_request: <function PostRequest.post_request at 0x7f57dfa5feb0>
+  child_exit: <function ChildExit.child_exit at 0x7f57dfa8c040>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f57dfa8c160>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f57dfa8c280>
+  on_exit: <function OnExit.on_exit at 0x7f57dfa8c3a0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f57dfa8c4c0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-02-23 17:15:10 +0000] [795] [INFO] Starting gunicorn 21.2.0
+[2024-02-23 17:15:10 +0000] [795] [DEBUG] Arbiter booted
+[2024-02-23 17:15:10 +0000] [795] [INFO] Listening at: unix:/tmp/gunicorn-qrmenu.sock (795)
+[2024-02-23 17:15:10 +0000] [795] [INFO] Using worker: sync
+[2024-02-23 17:15:10 +0000] [804] [INFO] Booting worker with pid: 804
+[2024-02-23 17:15:10 +0000] [805] [INFO] Booting worker with pid: 805
+[2024-02-23 17:15:10 +0000] [806] [INFO] Booting worker with pid: 806
+[2024-02-23 17:15:10 +0000] [807] [INFO] Booting worker with pid: 807
+[2024-02-23 17:15:10 +0000] [808] [INFO] Booting worker with pid: 808
+[2024-02-23 17:15:10 +0000] [795] [DEBUG] 5 workers
+[2024-02-23 14:17:40 -0300] [806] [DEBUG] GET /
+[2024-02-23 14:20:07 -0300] [808] [DEBUG] GET /
+[2024-02-23 14:28:18 -0300] [805] [DEBUG] GET /
+[2024-02-23 14:46:33 -0300] [806] [DEBUG] GET /
+[2024-02-23 14:46:33 -0300] [807] [DEBUG] GET /favicon.ico
+[2024-02-23 14:46:41 -0300] [806] [DEBUG] GET /
+[2024-02-23 14:46:41 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 14:47:32 -0300] [808] [DEBUG] GET /admin/
+[2024-02-23 14:54:00 -0300] [806] [DEBUG] GET /admin/
+[2024-02-23 14:54:00 -0300] [807] [DEBUG] GET /favicon.ico
+[2024-02-23 15:03:01 -0300] [804] [DEBUG] GET /admin/
+[2024-02-23 15:03:01 -0300] [804] [ERROR] Error handling request /admin/
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 686, in resolve
+    for pattern in self.url_patterns:
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/whitenoise/middleware.py", line 124, in __call__
+    return self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 178, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 124, in __call__
+    response = self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+[2024-02-23 15:03:01 -0300] [805] [DEBUG] GET /favicon.ico
+[2024-02-23 15:03:06 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:03:08 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:03:09 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:03:11 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:04:34 -0300] [804] [DEBUG] GET /
+[2024-02-23 15:04:34 -0300] [804] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 686, in resolve
+    for pattern in self.url_patterns:
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 738, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/whitenoise/middleware.py", line 124, in __call__
+    return self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = response or self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 178, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/wsgi.py", line 124, in __call__
+    response = self.get_response(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 57, in inner
+    response = response_for_exception(request, exc)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 140, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 184, in handle_uncaught_exception
+    callback = resolver.resolve_error_handler(500)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 752, in resolve_error_handler
+    callback = getattr(self.urlconf_module, "handler%s" % view_type, None)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/bacze/QR-Code-Menu/env/lib/python3.10/site-packages/django/urls/resolvers.py", line 731, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/bacze/QR-Code-Menu/QRMenu/urls.py", line 35
+    ]if settings.DEBUG:
+                      ^
+SyntaxError: invalid syntax
+[2024-02-23 15:04:34 -0300] [806] [DEBUG] GET /favicon.ico
+[2024-02-23 15:05:39 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:05:40 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:05:40 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:05:50 -0300] [808] [DEBUG] GET /
+[2024-02-23 15:05:50 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:05:51 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:06:07 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:06:08 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:06:51 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:06:52 -0300] [806] [DEBUG] GET /favicon.ico
+[2024-02-23 15:07:40 -0300] [808] [DEBUG] GET /
+[2024-02-23 15:07:40 -0300] [804] [DEBUG] GET /favicon.ico
+[2024-02-23 15:07:50 -0300] [806] [DEBUG] GET /
+[2024-02-23 15:07:51 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:07:55 -0300] [807] [DEBUG] GET /actuator/gateway/routes
+[2024-02-23 15:08:03 -0300] [805] [DEBUG] GET /cdn-cgi/trace
+[2024-02-23 15:09:20 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:09:21 -0300] [807] [DEBUG] GET /favicon.ico
+[2024-02-23 15:10:58 -0300] [804] [DEBUG] GET /
+[2024-02-23 15:10:58 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:12:17 -0300] [808] [DEBUG] GET /
+[2024-02-23 15:12:18 -0300] [804] [DEBUG] GET /favicon.ico
+[2024-02-23 15:12:18 -0300] [806] [DEBUG] GET /
+[2024-02-23 15:12:19 -0300] [804] [DEBUG] GET /
+[2024-02-23 15:12:19 -0300] [806] [DEBUG] GET /favicon.ico
+[2024-02-23 15:12:19 -0300] [808] [DEBUG] GET /favicon.ico
+[2024-02-23 15:12:54 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:12:54 -0300] [805] [DEBUG] GET /favicon.ico
+[2024-02-23 15:13:04 -0300] [808] [DEBUG] GET /ae
+[2024-02-23 15:13:06 -0300] [804] [DEBUG] GET /ae
+[2024-02-23 15:13:16 -0300] [806] [DEBUG] GET /ae
+[2024-02-23 15:13:16 -0300] [805] [DEBUG] GET /favicon.ico
+[2024-02-23 15:13:44 -0300] [807] [DEBUG] GET /
+[2024-02-23 15:13:48 -0300] [804] [DEBUG] GET /admin/
+[2024-02-23 15:13:53 -0300] [805] [DEBUG] GET /admin/
+[2024-02-23 15:14:56 -0300] [805] [DEBUG] GET /
+[2024-02-23 15:14:58 -0300] [804] [DEBUG] GET /logout/
+[2024-02-23 15:14:58 -0300] [808] [DEBUG] GET /
+[2024-02-23 15:15:00 -0300] [804] [DEBUG] GET /accounts/login/
+[2024-02-23 15:17:58 -0300] [806] [DEBUG] GET /accounts/login/
+[2024-02-23 15:17:58 -0300] [805] [DEBUG] GET /favicon.ico
+[2024-02-23 15:18:04 -0300] [808] [DEBUG] POST /accounts/login/
+[2024-02-23 15:18:05 -0300] [804] [DEBUG] GET /panelAdmin/panel/
+[2024-02-23 15:19:44 -0300] [804] [DEBUG] GET /.env
+[2024-02-23 15:19:44 -0300] [806] [DEBUG] POST /
+[2024-02-23 16:01:54 -0300] [808] [DEBUG] GET /geoserver
+[2024-02-23 16:03:49 -0300] [807] [DEBUG] GET /
+[2024-02-23 16:15:55 -0300] [807] [DEBUG] GET /
+[2024-02-23 16:16:04 -0300] [808] [DEBUG] GET /
